@@ -38,3 +38,5 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("footer-placeholder").innerHTML = data;
     });
 });
+
+console.log("hello world");
