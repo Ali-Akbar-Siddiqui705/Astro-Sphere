@@ -1,17 +1,17 @@
 /* * Navbar background */ 
 
-body{
+/* body{
   overflow-x: hidden;
-}
+} */
+
+
 
 .navbar {
   background-color: rgba(0, 0, 0, 0);
-  /* padding: 0.8rem 0; */
   padding-top: 10px;
-  z-index: 9999;
 
-}
 
+} 
 
 /* Navbar links */
 .navbar-nav .nav-link {
@@ -68,11 +68,18 @@ body{
 }
 
 .navbar-scrolled {
-  /* background-color: rgba(175, 193, 252, 0.85);  */
   backdrop-filter: blur(6px); 
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.5);
-    z-index: 9999;
+  z-index: 9999;
 }
+
+.offcanvas{
+  position: fixed;
+  height: 100vh;
+  z-index: 2000;
+}
+
+
 
 
 /* ***************************************** Footer ************************************************************ */
