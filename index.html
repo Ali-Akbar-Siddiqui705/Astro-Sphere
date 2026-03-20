@@ -30,31 +30,33 @@
     }
 
     /* ---------------- HERO SECTION ---------------- */
-  .hero-section {
-  background: url("./img/desktop-wallpaper-high-definitio.jpg") no-repeat center/cover;
+ 
+   .hero-section {
+  background: url("img/desktop-wallpaper-high-definitio.jpg") no-repeat center/cover;
 
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  padding-top: 100px; /* 👈 yeh add karo (main fix) */
-  
+  padding-top: 90px; /* 👈 navbar space */
+  box-sizing: border-box;
+
   text-align: center;
   position: relative;
-  box-sizing: border-box;
 }
 @media (max-width: 1024px) {
   .hero-section {
-    padding-top: 80px;
+    padding-top: 100px;
   }
 }
 
 @media (max-width: 768px) {
   .hero-section {
-    padding-top: 70px;
+    padding-top: 90px;
   }
 }
+
     .hero-section::before {
       content: "";
       position: absolute;
@@ -71,11 +73,11 @@
     }
 
     .hero-content h1 {
-      font-size: 2.8rem;
-      font-weight: 800;
-      line-height: 1.2;
-    }
-
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1.2;
+  margin: 0;
+}
     .hero-content h1 span {
       background: linear-gradient(90deg, #00f0ff, #8a2be2);
       background-clip: text;
@@ -88,7 +90,21 @@
       font-size: 1.1rem;
       opacity: 0.85;
     }
+/* @media (max-width: 1024px) {
 
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+    padding-top: 80px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-content h1 {
+    font-size: 1.8rem;
+     padding-top: 80px;
+  }
+} */
     .hero-buttons {
       display: flex;
       justify-content: center;
