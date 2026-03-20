@@ -33,24 +33,26 @@
   .hero-section {
   background: url("./img/desktop-wallpaper-high-definitio.jpg") no-repeat center/cover;
 
-  min-height: calc(100vh - 80px); /* 👈 yeh main fix hai */
-  
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
 
+  padding-top: 100px; /* 👈 yeh add karo (main fix) */
+  
   text-align: center;
   position: relative;
+  box-sizing: border-box;
 }
 @media (max-width: 1024px) {
   .hero-section {
-    min-height: calc(100vh - 70px);
+    padding-top: 80px;
   }
 }
 
 @media (max-width: 768px) {
   .hero-section {
-    min-height: calc(100vh - 60px);
+    padding-top: 70px;
   }
 }
     .hero-section::before {
