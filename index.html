@@ -30,29 +30,15 @@
     }
 
     /* ---------------- HERO SECTION ---------------- */
-   .hero-section {
-  background: url("./img/desktop-wallpaper-high-definitio.jpg") no-repeat center/cover;
-
-  min-height: calc(100vh - 80px); /* 👈 yeh main fix hai */
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-  position: relative;
-}
-@media (max-width: 1024px) {
-  .hero-section {
-    min-height: calc(100vh - 70px);
-  }
-}
-
-@media (max-width: 768px) {
-  .hero-section {
-    min-height: calc(100vh - 60px);
-  }
-}
+    .hero-section {
+      background: url("img/desktop-wallpaper-high-definitio.jpg") no-repeat center/cover;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      position: relative;
+       min-height: 100vh;
+    }
 
     .hero-section::before {
       content: "";
